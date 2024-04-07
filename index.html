@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>
+            Novanduh
+        </title>
+        <style>
+        body{
+            margin: 1.5% ;
+            font-family:Tahoma, sans-serif;;
+            font-weight: bolder;
+            font-size: 1.5em;
+            color: #212651;
+            background: #82ced4;
+        }
+        .Grid{
+            display: grid;
+            grid-gap: 2em;
+            grid-template-areas: 
+                'reel'
+                'about'
+        }
+        #About {
+        border-radius: 10px;
+        background: #ff93b8;
+        padding: 20px; 
+        grid-area: about;
+        }
+        #Reel{
+            border-radius: 15px;
+            background: #fef2b1;
+            padding: 30px;
+            border-style: solid;
+            border-color: #212651;
+            box-shadow: 10px 10px   #212651;
+            grid-area: reel;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="Grid">
+        <div id="Reel">
+            <center><iframe width="1220" height="630" src="https://www.youtube.com/embed/UjpXTfUbw34?si=w-6jOnxI2fkBiiIS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+        </div>
+        <div id="About"> <a href="WebGL Projects/webgl.html">WebGL Projects</a></div>
+    </div>
+    </body>
+</html>

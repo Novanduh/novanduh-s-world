@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebGL Projects</title>
+        <style>
+            body{
+                margin: 1.5% ;
+                font-family: 'Courier New', monospace;
+                font-weight: bolder;
+                color: #212651;
+                background: #82ced4;
+            }
+            .Grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1em;
+            }
+            #Main{
+            border-radius: 15px;
+            background: #fef2b1;
+            padding: 20px;
+            border-style: solid;
+            border-color: #212651;
+            box-shadow: -10px 10px   #212651;
+            height: 800px;
+            width: auto;
+            }
+            #Proj{
+                border-radius: 10px;
+                background: #212651;
+                height: 300px;
+            }
+            #Light{
+                border-radius: 10px;
+                background: #212651;
+                height: 300px;
+            }
+            a:link {
+                color: #ff93b8;
+            }
+            a:visited {
+                color: #fdb329;
+            }
+            a:hover {
+                color: #fef2b1;
+            }
+            a:active {
+                color: #82ced4;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Main">
+            <h1>WebGL Projects</h1>
+            <div class="Grid">
+                <div id="Light"><center><img src="Thumbnails/Blinn-Phong.png" width="250" height="250"><br><a href="Phong-Shader/phong.html">Blinn-Phong Shader</a></div>
+                <div id="Light"><center><img src="Thumbnails/Gouraud.png" width="250" height="250"><br><a href="Gouraud-Shader/gouraud.html">Gouraud Shader</a></div>
+                <div id="Light"><center><img src="Thumbnails/Flat.png" width="250" height="250"><br><a href="Flat-Shader/flat.html">Flat Shader</a></div>
+                <div id="Light"><center><img src="Thumbnails/Basic-Cel.png" width="250" height="250"><br><a href="Basic-Cel-Shader/basic-cel.html">Basic Cel Shader</a></div>
+                <div id="Light"><center><img src="Thumbnails/Gooch.png" width="250" height="250"><br><a href="Gooch-Shader/gooch.html">Gooch Shader</a></div>
+                <div id="Proj"><center><img src="Thumbnails/Bezier-Patch.png" width="250" height="250"><br><a href="Bezier/bezier-patch.html">Bezier Patch</a></center></div>
+                <div id="Proj"><center><img src="Thumbnails/Picking.png" width="250" height="250"><br><a href="Picking/Picking.html">Picking</a></center></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

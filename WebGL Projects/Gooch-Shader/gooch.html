@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://greggman.github.io/webgl-lint/webgl-lint.js" crossorigin></script>
+<script type="text/javascript" src="./Common/initShaders2.js"></script>
+<script type="text/javascript" src="./Common/MVnew.js"></script>
+<script type="text/javascript" src="./gooch.js"></script>
+<title>Gooch Shader</title>
+<style>
+    body{
+                margin: 1.5% ;
+                font-family: 'Courier New', monospace;
+                font-weight: bolder;
+                color: #212651;
+                background: #82ced4;
+            }
+            .Grid{
+            display: grid;
+            grid-template-columns: 4fr 2fr;
+            grid-gap: 1em;
+            grid-template-areas: 
+                'disp about'
+            }
+            .slider {
+            -webkit-appearance: none;
+            width: 300px;
+            height: 15px;
+            border-radius: 5px;  
+            background: #d3d3d3;
+            outline: none;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            }
+            .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%; 
+            background:#ff93b8;
+            cursor: pointer;
+            }
+            .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #fdb329;
+            cursor: pointer;
+            }
+            
+            #Main{
+            border-radius: 15px;
+            background: #fef2b1;
+            padding: 20px;
+            border-style: solid;
+            border-color: #212651;
+            box-shadow: -10px 10px   #212651;
+            height: 800px;
+            width: auto;
+            }
+            #Desc{
+                grid-area: about;
+            }
+            #Disp{
+                grid-area: disp;
+                border-radius: 10px;
+                background: #212651;
+                height: 800px;
+            }
+</style>
+</head>
+<body>
+    <div id="Main">
+        <div class="Grid">
+            <div id="Desc">
+                
+                <p>Camera Height</p>
+                    <div class="slider">
+                        <input type="range" min="-100" max="100" value="0" class="slider" id="x-rotation">
+                    </div>
+                    <p>Camera Rotation</p>
+                    <div class="slider">
+                        <input type="range" min="-25" max="25" value="0" class="slider" id="y-rotation">
+                    </div>
+                    <p>Light Height</p>
+                    <div class="slider">
+                        <input type="range" min="-100" max="100" value="0" class="slider" id="light-x-rotation">
+                    </div>
+                    <p>Light Rotation</p>
+                    <div class="slider">
+                        <input type="range" min="-25" max="25" value="0" class="slider" id="light-y-rotation">
+                    </div> 
+            </div>
+            <div id="Disp">
+                <center><canvas id="gl-canvas" width="800" height="800">
+                    Not supported
+                </canvas></center>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
